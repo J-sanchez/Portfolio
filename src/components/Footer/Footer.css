@@ -1,0 +1,133 @@
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center vertically */
+    position: fixed; /* Fixed positioning to make it stay at the bottom */
+    bottom: 0; /* Place the footer at the bottom of the screen */
+    z-index: 40; /* Ensures the footer is above other elements */
+    padding: 1rem 2rem;
+    background: linear-gradient(to bottom, black, transparent);
+    transition: all 0.3s ease;
+    height: auto;
+  }
+  
+  .footer.scrolled {
+    background-color: rgba(0, 0, 0, 0.8); /* Darken the footer when scrolled */
+  }
+  
+  .footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center; /* Ensure the logo is vertically centered */
+    cursor: pointer;
+  }
+  
+  .logo-text {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1.25rem;
+    list-style: none;
+  }
+  
+  .nav-item {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6b7280; /* Default color (slate) */
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .nav-item.active {
+    color: white;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .active-indicator {
+    position: absolute;
+    right: 0;
+    width: 8px;
+    height: 24px;
+    background-color: #d1d5db; /* Quaternary color */
+  }
+  
+  .menu-container {
+    display: none;
+  }
+  
+  .menu-icon {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+  }
+  
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    min-width: 140px;
+    z-index: 30;
+  }
+  
+  .mobile-menu.open {
+    display: flex;
+  }
+  
+  .mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+  }
+  
+  .mobile-nav-item {
+    font-size: 16px;
+    font-weight: 500;
+    color: #4b5563; /* Secondary color */
+  }
+  
+  .mobile-nav-item.active {
+    color: #3b82f6; /* Quaternary color */
+  }
+  
+  .mobile-nav-item a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Media query for responsiveness */
+  @media (min-width: 640px) {
+    .menu-container {
+      display: none;
+    }
+  
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+  
+  @media (max-width: 639px) {
+    .menu-container {
+      display: flex;
+    }
+  }

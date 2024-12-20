@@ -1,0 +1,119 @@
+/* Parallax Section */
+.parallax {
+    position: relative;
+    /* Add other parallax-related styles if needed */
+  }
+  
+  .parallax__content {
+    position: absolute;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 10;
+  }
+  
+  .parallax__content .content-left {
+    flex: 1;
+    margin-bottom: 0;
+  }
+  
+  .parallax__content h1 {
+    font-family: 'YourFontFamily', sans-serif;
+    font-weight: medium;
+    color: white;
+    font-size: 40px; /* Default size */
+    line-height: 110px; /* Default line height */
+  }
+  
+  .parallax__content .content-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 4rem;
+    margin-left: 8vw;
+  }
+  
+  .parallax__content .content-right .streaky-glow {
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    line-height: 40px;
+    max-width: 320px; /* Default max width */
+  }
+  
+  .parallax__stars, .parallax__planets, .parallax__mountain1, .parallax__mountain2, .parallax__crater, .parallax__sun {
+    position: absolute;
+    width: 100%;
+    /* Any other necessary position or size adjustments */
+  }
+  
+  .parallax__stars {
+    /* Add specific styles for the stars image */
+  }
+  
+  .parallax__planets {
+    /* Add specific styles for the planets image */
+  }
+  
+  .parallax__mountain1 {
+    /* Add specific styles for the mountain1 image */
+  }
+  
+  .parallax__mountain2 {
+    /* Add specific styles for the mountain2 image */
+  }
+  
+  .parallax__crater {
+    /* Add specific styles for the crater image */
+  }
+  
+  .parallax__sun {
+    /* Add specific styles for the sun image */
+  }
+  
+  /* Media Queries for responsive design */
+  @media (min-width: 640px) {
+    .parallax__content h1 {
+      font-size: 50px;
+      line-height: 140px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .parallax__content h1 {
+      font-size: 68px;
+      line-height: 150px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .parallax__content h1 {
+      font-size: 80px;
+      line-height: 160px;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .parallax__content h1 {
+      font-size: 100px;
+      line-height: 170px;
+    }
+  }
+  
+  @media (min-width: 1440px) {
+    .parallax__content h1 {
+      font-size: 180px;
+      line-height: 200px;
+    }
+  }
+  
+  @media (max-width: 639px) {
+    .parallax__content .content-right {
+      margin-top: 10rem;
+      margin-left: -4vh;
+    }
+  }
+  

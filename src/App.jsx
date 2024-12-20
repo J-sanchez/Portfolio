@@ -1,14 +1,13 @@
-import { useState } from 'react'
-import './App.css'
+import { useEffect, useRef } from 'react';
+import { BrowserRouter } from "react-router-dom";
+import { Navbar } from "./components";
 
-function App() {
-  return (
-    <>
-      <div>
-        hello world
-          </div>
-    </>
-  )
-}
-
-export default App
+  export default function App() {
+  
+    return (
+        <BrowserRouter>
+        <div> <Navbar />  </div>
+        </BrowserRouter>
+        
+    );
+};
