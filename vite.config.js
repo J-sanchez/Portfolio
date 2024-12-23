@@ -1,15 +1,7 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite'
 
 export default defineConfig({
-  assetsInclude: ['**/*.glb', '**/*.hdr', '**/*.glsl'],
-  build: {
-    assetsInlineLimit: 1024,
-  },
-  server: {
-    port: 7777,
-  },
-  plugins: [
-    react(),
-  ],
-});
+  plugins: [react()],
+  assetsInclude: ['**/*.glb', '**/*.gltf'],
+})
